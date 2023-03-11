@@ -23,6 +23,7 @@ public class Class01 {
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\rozym\\IdeaProjects\\mobilTestingTurkish\\src\\apps\\GestureTool.apk");
         desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET,"true");
+        //desiredCapabilities.setCapability(key:"appActivity","com.google.android.apps.nexuslauncher.NexusLauncherActivity");
         AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(new URL("http:127.0.0.1:4723/wd/hub"), desiredCapabilities);
         driver.findElementsById("com.davemac327.gesture.tool:id/addButton");
         //driver.findElements(By.id("com.davemac327.gesture.tool:id/addButton"));
