@@ -35,6 +35,7 @@ public class Appium02 {
         desiredCapabilities.setCapability("appActivity","com.google.android.apps.nexuslauncher.NexusLauncherActivity");
         AndroidDriver<MobileElement> driver= new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),desiredCapabilities);
         driver.unlockDevice();
+         // today is off. fix some bugs
 
 
     }
