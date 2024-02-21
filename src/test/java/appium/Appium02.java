@@ -25,17 +25,19 @@ public class Appium02 {
 
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
-        desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"8.0");
-        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel_2");
+        desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"7.0");
+        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel 2 API 24");
         //defind device
-       // desiredCapabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\rozym\\IdeaProjects\\mobilTestingTurkish\\src\\apps\\GestureTool.apk");
+     desiredCapabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\rozym\\IdeaProjects\\mobilTestingTurkish\\src\\apps\\GestureTool.apk");
         //cmd->adb devices
         //cmd->adb shell->dumpsys window | grep -E "mCurrentFocus"-> mCurrentFocus=Window{fb0a4aa u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}
-        desiredCapabilities.setCapability("appPackage","com.google.android.apps.nexuslauncher");
-        desiredCapabilities.setCapability("appActivity","com.google.android.apps.nexuslauncher.NexusLauncherActivity");
+        //desiredCapabilities.setCapability("appPackage","com.google.android.apps.nexuslauncher");
+        //desiredCapabilities.setCapability("appActivity","com.google.android.apps.nexuslauncher.NexusLauncherActivity");
         AndroidDriver<MobileElement> driver= new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),desiredCapabilities);
         driver.unlockDevice();
          // today is off. fix some bugs
+        //son
+
 
 
     }

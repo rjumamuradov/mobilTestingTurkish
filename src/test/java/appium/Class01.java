@@ -18,13 +18,13 @@ public class Class01 {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         //desiredCapabilities.setCapability(CapabilityType.PLATFORM_NAME,"Android");
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_2");
-        desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.0");
+        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 4");
+        desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\rozym\\IdeaProjects\\mobilTestingTurkish\\src\\apps\\GestureTool.apk");
         desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET,"true");
         //desiredCapabilities.setCapability(key:"appActivity","com.google.android.apps.nexuslauncher.NexusLauncherActivity");
-        AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(new URL("http:127.0.0.1:4723/wd/hub"), desiredCapabilities);
+        AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
         driver.findElementsById("com.davemac327.gesture.tool:id/addButton");
         //driver.findElements(By.id("com.davemac327.gesture.tool:id/addButton"));
         //xpath text ile
